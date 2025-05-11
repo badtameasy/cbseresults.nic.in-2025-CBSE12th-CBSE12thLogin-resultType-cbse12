@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBSE 12th Result 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .bg-cbse-blue {
+            background-color: #1a237e;
+        }
+        .text-cbse-blue {
+            color: #1a237e;
+        }
+        .border-cbse-blue {
+            border-color: #1a237e;
+        }
+        .shadow-custom {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .input-focus:focus {
+            border-color: #1a237e;
+            box-shadow: 0 0 0 2px rgba(26, 35, 126, 0.2);
+        }
+        .btn-hover:hover {
+            background-color: #0d47a1;
+        }
+        .floating-label {
+            position: absolute;
+            pointer-events: none;
+            left: 15px;
+            top: 11px;
+            transition: 0.2s ease all;
+            color: #999;
+            font-size: 14px;
+        }
+        input:focus ~ .floating-label,
+        input:not(:placeholder-shown) ~ .floating-label {
+            top: -8px;
+            left: 10px;
+            font-size: 12px;
+            background-color: white;
+            padding: 0 5px;
+            color: #1a237e;
+        }
+        .input-container {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .captcha-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .captcha-box {
+            background-color: #f0f0f0;
+            padding: 8px 15px;
+            border-radius: 4px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            user-select: none;
+        }
+        .marquee {
+            white-space: nowrap;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        .marquee span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 15s linear infinite;
+        }
+        @keyframes marquee {
+            0%   { transform: translate(0, 0); }
+            100% { transform: translate(-100%, 0); }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="bg-cbse-blue text-white py-3 shadow-md">
+            <div class="container mx-auto px-4">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4d/CBSE_logo.svg/1200px-CBSE_logo.svg.png" alt="CBSE Logo" class="h-12 mr-3">
+                        <div>
+                            <h1 class="text-xl font-bold">CENTRAL BOARD OF SECONDARY EDUCATION</h1>
+                            <p class="text-sm">(An Autonomous Organization under the Ministry of Education, Govt. of India)</p>
+                        </div>
+                    </div>
+                    <div class="hidden md:block">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png" alt="India Flag" class="h-12">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Notification Bar -->
+        <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-2">
+            <div class="container mx-auto px-4">
+                <div class="marquee">
+                    <span>
+                        <i class="fas fa-exclamation-circle mr-2"></i>
+                        Important: Results are expected to be declared on May 2025. Check back later for updates.
+                        &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+                        For any queries, contact CBSE Helpline: 011-22509256, 22509257
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <main class="flex-grow container mx-auto px-4 py-8">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-lg shadow-custom overflow-hidden">
+                    <!-- Result Header -->
+                    <div class="bg-cbse-blue text-white py-3 px-6">
+                        <h2 class="text-xl font-bold text-center">SENIOR SCHOOL CERTIFICATE EXAMINATION (CLASS XII) RESULTS 2025</h2>
+                    </div>
+                    
+                    <!-- Login Form -->
+                    <div class="p-6 md:p-8">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <!-- Left Side - Form -->
+                            <div>
+                                <h3 class="text-lg font-semibold text-cbse-blue mb-4">Enter Your Details</h3>
+                                
+                                <form id="resultForm" class="space-y-4">
+                                    <div class="input-container">
+                                        <input type="text" id="rollNo" class="w-full px-4 py-2 border border-gray-300 rounded-md input-focus focus:outline-none" placeholder=" " required>
+                                        <label for="rollNo" class="floating-label">Roll Number</label>
+                                    </div>
+                                    
+                                    <div class="input-container">
+                                        <input type="text" id="schoolNo" class="w-full px-4 py-2 border border-gray-300 rounded-md input-focus focus:outline-none" placeholder=" " required>
+                                        <label for="schoolNo" class="floating-label">School Number</label>
+                                    </div>
+                                    
+                                    <div class="input-container">
+                                        <input type="text" id="centerNo" class="w-full px-4 py-2 border border-gray-300 rounded-md input-focus focus:outline-none" placeholder=" " required>
+                                        <label for="centerNo" class="floating-label">Center Number</label>
+                                    </div>
+                                    
+                                    <div class="input-container">
+                                        <input type="text" id="admitCardNo" class="w-full px-4 py-2 border border-gray-300 rounded-md input-focus focus:outline-none" placeholder=" " required>
+                                        <label for="admitCardNo" class="floating-label">Admit Card ID</label>
+                                    </div>
+                                    
+                                    <div class="mb-4">
+                                        <label class="block text-sm font-medium text-gray-700 mb-2">Captcha</label>
+                                        <div class="captcha-container">
+                                            <div class="captcha-box" id="captcha">A7B9C3</div>
+                                            <button type="button" onclick="refreshCaptcha()" class="text-cbse-blue hover:text-blue-800">
+                                                <i class="fas fa-sync-alt"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="input-container">
+                                        <input type="text" id="captchaInput" class="w-full px-4 py-2 border border-gray-300 rounded-md input-focus focus:outline-none" placeholder=" " required>
+                                        <label for="captchaInput" class="floating-label">Enter Captcha</label>
+                                    </div>
+                                    
+                                    <button type="submit" class="w-full bg-cbse-blue text-white py-2 px-4 rounded-md font-medium btn-hover transition duration-300 flex items-center justify-center">
+                                        <i class="fas fa-search mr-2"></i> View Result
+                                    </button>
+                                </form>
+                            </div>
+                            
+                            <!-- Right Side - Instructions -->
+                            <div class="border-l-2 border-gray-200 pl-6">
+                                <h3 class="text-lg font-semibold text-cbse-blue mb-4">Important Instructions</h3>
+                                <ul class="space-y-3 text-sm text-gray-700">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                        <span>Enter your Roll Number, School Number, Center Number and Admit Card ID exactly as provided on your admit card.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                        <span>Results will be displayed only after entering the correct captcha code.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                        <span>In case of any discrepancy in the result, contact your school immediately.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                        <span>Print or download your result for future reference.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                        <span>For any technical issues, clear your browser cache and try again.</span>
+                                    </li>
+                                </ul>
+                                
+                                <div class="mt-6 bg-blue-50 border border-blue-200 rounded-md p-4">
+                                    <h4 class="font-medium text-blue-800 mb-2">
+                                        <i class="fas fa-info-circle mr-2"></i> Note
+                                    </h4>
+                                    <p class="text-sm text-blue-700">
+                                        The result displayed is provisional. Original mark sheets will be provided by your school.
+                                    </p>
+                                </div>
+                                
+                                <div class="mt-6">
+                                    <h4 class="font-medium text-gray-700 mb-2">Help & Support</h4>
+                                    <div class="flex flex-wrap gap-2">
+                                        <a href="#" class="text-sm text-cbse-blue hover:underline flex items-center">
+                                            <i class="fas fa-phone-alt mr-1"></i> Helpline
+                                        </a>
+                                        <span class="text-gray-400">|</span>
+                                        <a href="#" class="text-sm text-cbse-blue hover:underline flex items-center">
+                                            <i class="fas fa-question-circle mr-1"></i> FAQs
+                                        </a>
+                                        <span class="text-gray-400">|</span>
+                                        <a href="#" class="text-sm text-cbse-blue hover:underline flex items-center">
+                                            <i class="fas fa-envelope mr-1"></i> Contact
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Additional Info -->
+                <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
+                        <h4 class="font-medium text-cbse-blue mb-2">
+                            <i class="fas fa-calendar-alt mr-2"></i> Important Dates
+                        </h4>
+                        <ul class="text-sm space-y-1">
+                            <li>Exam Dates: Feb-Mar 2025</li>
+                            <li>Result Declaration: May 2025</li>
+                            <li>Verification: Within 15 days</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
+                        <h4 class="font-medium text-cbse-blue mb-2">
+                            <i class="fas fa-link mr-2"></i> Quick Links
+                        </h4>
+                        <ul class="text-sm space-y-1">
+                            <li><a href="#" class="text-blue-600 hover:underline">CBSE Official Website</a></li>
+                            <li><a href="#" class="text-blue-600 hover:underline">Previous Year Results</a></li>
+                            <li><a href="#" class="text-blue-600 hover:underline">Compartment Exam</a></li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
+                        <h4 class="font-medium text-cbse-blue mb-2">
+                            <i class="fas fa-chart-bar mr-2"></i> Statistics
+                        </h4>
+                        <ul class="text-sm space-y-1">
+                            <li>Total Students: ~12 lakh</li>
+                            <li>Pass Percentage: To be declared</li>
+                            <li>Toppers: To be announced</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-cbse-blue text-white py-4">
+            <div class="container mx-auto px-4">
+                <div class="text-center text-sm">
+                    <p>© 2025 Central Board of Secondary Education. All Rights Reserved.</p>
+                    <p class="mt-1">Designed & Developed by NIC (National Informatics Centre)</p>
+                    <div class="mt-2 flex justify-center space-x-4">
+                        <a href="#" class="hover:underline">Privacy Policy</a>
+                        <a href="#" class="hover:underline">Terms & Conditions</a>
+                        <a href="#" class="hover:underline">Disclaimer</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal for Result -->
+    <div id="resultModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+        <div class="bg-white rounded-lg w-full max-w-2xl max-h-[90vh] overflow-y-auto">
+            <div class="bg-cbse-blue text-white py-3 px-6 flex justify-between items-center">
+                <h3 class="text-lg font-bold">CBSE Class XII Result 2025</h3>
+                <button onclick="closeModal()" class="text-white hover:text-gray-200">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="p-6">
+                <div class="text-center mb-6">
+                    <h4 class="text-xl font-semibold text-cbse-blue">PROVISIONAL MARKSHEET</h4>
+                    <p class="text-sm text-gray-600">(For office use only - Not valid without school seal)</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                    <div>
+                        <p class="font-medium">Roll No: <span class="font-normal" id="modalRollNo">1234567</span></p>
+                        <p class="font-medium">Name: <span class="font-normal" id="modalName">RAHUL SHARMA</span></p>
+                        <p class="font-medium">Mother's Name: <span class="font-normal" id="modalMother">NEETA SHARMA</span></p>
+                    </div>
+                    <div>
+                        <p class="font-medium">School: <span class="font-normal" id="modalSchool">DELHI PUBLIC SCHOOL, NEW DELHI</span></p>
+                        <p class="font-medium">Center No: <span class="font-normal" id="modalCenter">1234</span></p>
+                        <p class="font-medium">Admit Card ID: <span class="font-normal" id="modalAdmit">DL12345678</span></p>
+                    </div>
+                </div>
+                
+                <div class="overflow-x-auto">
+                    <table class="min-w-full border border-gray-300">
+                        <thead class="bg-gray-100">
+                            <tr>
+                                <th class="border border-gray-300 px-3 py-2 text-left">Subject</th>
+                                <th class="border border-gray-300 px-3 py-2 text-center">Marks</th>
+                                <th class="border border-gray-300 px-3 py-2 text-center">Grade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="border border-gray-300 px-3 py-2">ENGLISH CORE</td>
+                                <td class="border border-gray-300 px-3 py-2 text-center">92</td>
+                                <td class="border border-gray-300 px-3 py-2 text-center">A1</td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="border border-gray-300 px-3 py-2">MATHEMATICS</td>
+                                <td class="border border-gray-300 px-3 py-2 text-center">95</td>
+                                <td class="border border-gray-300 px-3 py-2 text-center">A1</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 px-3 py-2">PHYSICS</td>
+                                <td class="border border-gray-300 px-3 py-2 text-center">89</td>
+                                <td class="border border-gray-300 px-3 py-2 text-center">A2</td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="border border-gray-300 px-3 py-2">CHEMISTRY</td>
+                                <td class="border border-gray-300 px-3 py-2 text-center">87</td>
+                                <td class="border border-gray-300 px-3 py-2 text-center">A2</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 px-3 py-2">COMPUTER SCIENCE</td>
+                                <td class="border border-gray-300 px-3 py-2 text-center">94</td>
+                                <td class="border border-gray-300 px-3 py-2 text-center">A1</td>
+                            </tr>
+                        </tbody>
+                        <tfoot class="bg-gray-100 font-semibold">
+                            <tr>
+                                <td class="border border-gray-300 px-3 py-2">TOTAL</td>
+                                <td class="border border-gray-300 px-3 py-2 text-center">457/500</td>
+                                <td class="border border-gray-300 px-3 py-2 text-center">A1</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 px-3 py-2">PERCENTAGE</td>
+                                <td class="border border-gray-300 px-3 py-2 text-center" colspan="2">91.4%</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                
+                <div class="mt-6 text-center">
+                    <p class="text-sm text-gray-600 mb-4">This is a computer generated document and does not require any signature.</p>
+                    <div class="flex justify-center space-x-4">
+                        <button onclick="printResult()" class="bg-cbse-blue text-white px-4 py-2 rounded-md hover:bg-blue-800 flex items-center">
+                            <i class="fas fa-print mr-2"></i> Print
+                        </button>
+                        <button onclick="downloadResult()" class="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 flex items-center">
+                            <i class="fas fa-download mr-2"></i> Download
+                        </button>
+                        <button onclick="closeModal()" class="bg-gray-500 text-white px-4 py-2 rounded-md hover:bg-gray-600 flex items-center">
+                            <i class="fas fa-times mr-2"></i> Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Generate random captcha
+        function generateCaptcha() {
+            const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+            let captcha = '';
+            for (let i = 0; i < 6; i++) {
+                captcha += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            return captcha;
+        }
+        
+        // Refresh captcha
+        function refreshCaptcha() {
+            document.getElementById('captcha').textContent = generateCaptcha();
+        }
+        
+        // Initialize captcha on page load
+        window.onload = function() {
+            refreshCaptcha();
+            
+            // Form submission
+            document.getElementById('resultForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const enteredCaptcha = document.getElementById('captchaInput').value;
+                const actualCaptcha = document.getElementById('captcha').textContent;
+                
+                if (enteredCaptcha.toUpperCase() !== actualCaptcha) {
+                    alert('Invalid captcha! Please try again.');
+                    refreshCaptcha();
+                    return;
+                }
+                
+                // Show modal with result
+                showModal();
+            });
+        };
+        
+        // Show modal
+        function showModal() {
+            document.getElementById('resultModal').classList.remove('hidden');
+        }
+        
+        // Close modal
+        function closeModal() {
+            document.getElementById('resultModal').classList.add('hidden');
+        }
+        
+        // Print result
+        function printResult() {
+            window.print();
+        }
+        
+        // Download result (mock function)
+        function downloadResult() {
+            alert('Download functionality would be implemented in a real application.');
+        }
+    </script>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=arykush/cbse" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
+</html>

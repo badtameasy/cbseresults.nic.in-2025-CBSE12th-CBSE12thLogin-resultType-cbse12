@@ -1,1 +1,12 @@
-# cbseresults.nic.in-2025-CBSE12th-CBSE12thLogin-resultType-cbse12
+---
+title: cbse
+emoji: 🐳
+colorFrom: yellow
+colorTo: blue
+sdk: static
+pinned: false
+tags:
+  - deepsite
+---
+
+Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
