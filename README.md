@@ -1,0 +1,1 @@
+# cbseresults.nic.in-2025-CBSE12th-CBSE12thLogin-resultType-cbse12
